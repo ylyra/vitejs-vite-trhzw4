@@ -6,10 +6,12 @@
 
 body {
   background-color: #121214;
+  color: #fff;
 }
 
 html {
-  font-size: 87.5%;
+  font-size: 1rem;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -21,7 +23,9 @@ header {
   padding-left: 1rem;
   padding-right: 1rem;
   margin: 0 auto;
+}
 
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,6 +47,10 @@ button {
   display: none;
 }
 
+section {
+  min-height: 100vh;
+}
+
 ul {
   display: flex;
   list-style: none;
@@ -53,6 +61,7 @@ ul {
   .navbar-open {
     display: block;
   }
+
   ul {
     display: none;
 
@@ -67,4 +76,31 @@ ul {
   ul.open {
     display: flex;
   }
+
+  #principal {
+    display: none;
+  }
+}
+
+#lorem {
+  margin-top: 2rem; /* 16*2 = 32px */
+  background-color: #f4f6f7;
+  color: #121214;
+}
+
+#lorem .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#contato {
+  color: #121214;
+  background-color: #fff;
+}
+
+textarea {
+  border: 6px solid #005ad5;
+
+  resize: none;
 }
