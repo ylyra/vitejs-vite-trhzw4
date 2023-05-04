@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gayzão</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <svg
+          width="221"
+          height="31"
+          viewBox="0 0 221 31"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17.3672 21.4512H9.73828L11.3555 16.8281H15.5742L9.33398 0.673828H16.9102L26.209 24H18.3516L17.3672 21.4512ZM7.66406 24H0.158203L8.49023 1.72852L11.9355 10.9922L7.66406 24ZM28.4414 0.673828H36.7031L42.9609 11.0449L47.8828 2.60742V14.3496L42.2754 24L28.4414 0.673828ZM49.0254 24V0.673828H56.7949V24H49.0254ZM28.4238 24V2.83594L35.6836 15.0176V24H28.4238ZM62.1211 10.9922H77.6426V15.1934H62.1211V10.9922ZM86.8184 5.33203H89.9297V11.9238H98.7891L102.832 16.002V19.6406L98.4902 24H95.0625V16.9512H86.6602L82.6172 13.0664V9.51562L86.8184 5.33203ZM90.3867 20.5723H93.832V24L85.834 23.9824L82.5996 20.1504V18.6562H90.3867V20.5723ZM95.0625 8.75977H91.1602V5.33203H99.4219L102.199 8.10938V10.2188H95.0625V8.75977ZM115.137 30.5039H107.684L117.141 5.33203H124.611L115.137 30.5039ZM102.656 5.33203H110.408L113.027 12.9258L109.547 22.4355L102.656 5.33203ZM129.498 5.33203H132.609V11.9238H141.469L145.512 16.002V19.6406L141.17 24H137.742V16.9512H129.34L125.297 13.0664V9.51562L129.498 5.33203ZM133.066 20.5723H136.512V24L128.514 23.9824L125.279 20.1504V18.6562H133.066V20.5723ZM137.742 8.75977H133.84V5.33203H142.102L144.879 8.10938V10.2188H137.742V8.75977ZM156.551 19.3418H161.684V24H153.457L148.781 19.3418V9.99023H147.234V5.33203H148.781V3.31055L156.551 0.673828V19.3418ZM157.781 9.99023V5.33203H161.965V9.99023H157.781ZM172.283 24H169.172L164.514 19.3418V9.99023L169.172 5.33203H172.283V24ZM173.514 16.5117V13.2598H177.609V9.99023H173.514V5.33203H180.105L184.764 9.99023V16.5117H173.514ZM173.514 24V19.6406H183.955V21.6621L181.635 24H173.514ZM188.35 24V5.33203H196.137V24H188.35ZM200.531 9.99023H197.367V7.79297L199.811 5.33203H205.822L208.318 7.82812V24H200.531V9.99023ZM212.713 9.99023H209.549V7.82812L211.939 5.33203H216.686L220.482 9.16406V24H212.713V9.99023Z"
+            fill="white"
+          />
+        </svg>
+
+        <button class="navbar-open">open</button>
+
+        <ul>
+          <li>
+            <a href="#contato">Contato</a>
+          </li>
+          <li>
+            <a href="#contato">Contato</a>
+          </li>
+          <li>
+            <a href="#contato">Contato</a>
+          </li>
+          <li>
+            <a href="#contato">Contato</a>
+          </li>
+          <li>
+            <a href="#contato">Contato</a>
+          </li>
+          <li>
+            <a href="#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <button>asdasdads</button>
+    <script type="module" src="/src/main.ts"></script>
+
+    <script>
+      document.querySelector('.navbar-open').addEventListener('click', () => {
+        document.querySelector('ul').classList.toggle('open');
+
+        document.querySelector('.navbar-open').textContent = document
+          .querySelector('ul')
+          .classList.contains('open')
+          ? 'fechar'
+          : 'abrir';
+      });
+    </script>
+  </body>
+</html>
